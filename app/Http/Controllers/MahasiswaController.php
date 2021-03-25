@@ -94,9 +94,11 @@ class MahasiswaController extends Controller
         $request->validate([
             'nim' => 'required',
             'nama' => 'required',
+            'tanggal_lahir' => 'required',
             'kelas' => 'required',
             'jurusan' => 'required',
             'no_handphone' => 'required',
+            'email' => 'required',
         ]);
 
         // Funsgi eloquent untuk mengupdate data inputan kita

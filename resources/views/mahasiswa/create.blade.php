@@ -30,10 +30,9 @@
                     <label for="nama">Nama</label>
                     <input type="nama" name="nama" class="form-control" id="nama" aria-describedby="nama" >
                 </div>
-                <div class="form-group">
-                    <label for="tanggal_lahir">Tanggal Lahir</label>
-
-                    <input type="tanggal_lahir" name="tanggal_lahir" class="form-control" id="tanggal_lahir" aria-describedby="tanggal_lahir" >
+                <<div class="form-group">
+                    <label for="tanggal_lahir">Tanggal_Lahir</label>
+                    <input type="date" name="tanggal_lahir" class="form-control" id="tanggal_lahir" aria-describedby="tanggal_lahir" >
                 </div>
                 <div class="form-group">
                     <label for="kelas">Kelas</label>  <input type="kelas" name="kelas" class="form-control" id="kelas" aria-describedby="password" >
