@@ -16,7 +16,16 @@
                 <p>{{ $message }}</p>
             </div>
         @endif
-
+        <form method="post" action="{{url('cari')}}" id="myForm">
+            @csrf
+                <div class="form-group">
+                <label for="nama">Cari</label>
+                <input type="text"name="nama"class="form-control"id="nama"aria-describedby="nama"  placeholder="Cari bedasarkan nama">
+                </div>
+                <button type="submit" class="btn btn-success mt-3">
+            cari
+            </button>
+            </form>
         <table class="table table-bordered">
         <tr>
             <th>Nim</th>
@@ -49,7 +58,7 @@
         </tr>
         @endforeach
     </table>
-@endsection
+
     </table>
 
     <div class="d-flex justify-content-center">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Mahasiswa;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class MahasiswaController extends Controller
@@ -121,4 +122,11 @@ class MahasiswaController extends Controller
         return redirect()->route('mahasiswa.index')
             ->with('success', 'Mahasiswa Berhasil Dihapus');
     }
+    public function cari(Request $request)
+	{
+		$Mahasiswa=Mahasiswa::where('nama',$request->nama)->first();
+        return view('mahasiswa.cari',compact('Mahasiswa'));
+
+	}
+
 }
